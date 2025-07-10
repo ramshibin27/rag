@@ -1,0 +1,5 @@
+ProductID,ProductName,Price_USD,StockQuantity,WarehouseLocation,ImageFile
+AFT-101,Pro-Treadmill T1000,1499.99,50,North,T1000.jpg
+AFC-501,PowerCycle C500,799.50,120,West,C500.jpg
+AFR-202,Fusion Rower R200,899.00,75,North,R200.jpg
+AFK-808,Kettlebell Set,149.99,300,South,

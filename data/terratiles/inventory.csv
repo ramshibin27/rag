@@ -1,0 +1,3 @@
+ProductID,ProductName,Price_USD,StockQuantity,Collection,ImageFile
+TT-MAR-01,Marble Calacatta,89.99,1500,Premium,"marble.jpg"
+TT-WOD-02,Oak Wood Look,45.50,4000,Standard,"woodtile.jpg"
