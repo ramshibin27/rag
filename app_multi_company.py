@@ -5,16 +5,16 @@ import docx
 import google.generativeai as genai
 import os
 import re
-from dotenv import load_dotenv
+# --- THIS IS THE NEW, CORRECT CODE ---
 
-# --- CONFIGURATION ---
-
-# Load environment variables from .env file
-load_dotenv()
-api_key = os.getenv("GOOGLE_API_KEY")
-if not api_key:
-    st.error("Google API Key not found. Please set it in your .env file.")
+# Load the API key from Streamlit's secrets manager
+try:
+    api_key = st.secrets["GOOGLE_API_KEY"]
+except KeyError:
+    st.error("Google API Key not found in Streamlit Secrets. Please add it.")
     st.stop()
+
+# Configure the Generative AI model
 genai.configure(api_key=api_key)
 
 # Define company-specific data paths and names
